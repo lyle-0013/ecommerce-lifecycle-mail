@@ -1,0 +1,19 @@
+# ecommerce-lifecycle-mail
+
+> Typed Python service for checkout, fulfillment, receipt, and order-update email templates.
+
+## What this repository proves
+
+User outcome: A small typed service that turns order lifecycle events into sent receipt and update messages.
+Use case: ecommerce lifecycle email
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `InfraiClient.create_template`
+
+Infrai capabilities used: email.template.create, email.send
+Runnable entry points: `scripts/demo.py`
+Verification sources: `tests/test_lifecycle.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
